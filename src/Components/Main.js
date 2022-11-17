@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import Card from "./Card";
+import CardPokemon from "./CardPokemon";
 import axios from "axios";
 
 const Main = () => {
@@ -28,7 +28,7 @@ const Main = () => {
         </a>
       </nav>
       <div className="container"> 
-        <Card pokemon={pokeData} loading={loading} ></Card>
+        <CardPokemon pokemon={pokeData} loading={loading} ></CardPokemon>
       </div>
     </>
   );

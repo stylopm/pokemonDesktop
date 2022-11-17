@@ -1,9 +1,11 @@
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
 import Modal from "react-bootstrap/Modal";
 import Spinner from "react-bootstrap/Spinner";
 import axios from "axios";
 import { useState } from "react";
 
-const Card = ({ pokemon, loading }) => {
+const CardPokemon = ({ pokemon, loading }) => {
   /// [variable, funcionLlenaVariable ]
   const [showModal, setShow] = useState(false);
   const [selectPokemon, setSelectPokemon] = useState({});
@@ -40,12 +42,14 @@ const Card = ({ pokemon, loading }) => {
         ) : (
           pokemon.map((item) => {
             return (
-              <div className="col-md-3" onClick={() => openPokeInfo(item)}>
-                {/* <img className="card-img-top card-img" src={ item.sprites.front_default }></img> */}
-                <div className="card-body">
-                  <h5 className="card-title ">{item.name} </h5>
-                </div>
-              </div>
+              <Card style={{ width: "18rem" }}>
+                <Card.Body>
+                  <Card.Title>{item.name}</Card.Title>
+                  <Button onClick={() => openPokeInfo(item)} variant="primary">
+                    Go show
+                  </Button>
+                </Card.Body>
+              </Card>
             );
           })
         )}
@@ -54,4 +58,4 @@ const Card = ({ pokemon, loading }) => {
   );
 };
 
-export default Card;
+export default CardPokemon;
