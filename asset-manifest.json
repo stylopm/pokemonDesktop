@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/pokemonDesktop/static/css/main.a102879e.css",
+    "main.js": "/pokemonDesktop/static/js/main.012c4546.js",
+    "static/js/787.ab378faf.chunk.js": "/pokemonDesktop/static/js/787.ab378faf.chunk.js",
+    "index.html": "/pokemonDesktop/index.html",
+    "main.a102879e.css.map": "/pokemonDesktop/static/css/main.a102879e.css.map",
+    "main.012c4546.js.map": "/pokemonDesktop/static/js/main.012c4546.js.map",
+    "787.ab378faf.chunk.js.map": "/pokemonDesktop/static/js/787.ab378faf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a102879e.css",
+    "static/js/main.012c4546.js"
+  ]
+}
